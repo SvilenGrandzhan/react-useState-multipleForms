@@ -3,7 +3,7 @@ function ComponentA({ elRef }) {
     return (
       <p>
         COMPONENT A:
-        <input ref={elRef} />
+        <input className="border border-black rounded-md m-1" ref={elRef} />
       </p>
     );
   }

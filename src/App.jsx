@@ -24,8 +24,10 @@ function App() {
       <Form setForm={setForm}/>
       {/* Passing input date as props to other child */}
       <Print form={form}/>
-      <ComponentA elRef={elementRef}/>
-      <ComponentB getRefFrom={elementRef}/>
+      <div className="CompDiv">
+        <ComponentA elRef={elementRef}/>
+        <ComponentB getRefFrom={elementRef}/>
+      </div>
     </div>
   );
 }
