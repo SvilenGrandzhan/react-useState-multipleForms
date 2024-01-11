@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
-import Display from "./Display.jsx";
-import Form from "./Form.jsx";
+import Form from "./Form";
+import Print from "./Print";
 
 function App() {
   // Managing state in parent component
@@ -19,7 +19,7 @@ function App() {
       {/* Passing managing state function as props to child */}
       <Form setForm={setForm}/>
       {/* Passing input date as props to other child */}
-      <Display form={form}/>
+      <Print form={form}/>
     </>
   );
 }
