@@ -7,8 +7,8 @@ function ComponentB({ getRefFrom }) {
 
   return (
     <p>
-      <button type="button" onClick={submit}>
-        Submit Here
+      <button className="border border-black" type="button" onClick={submit}>
+        Click Here
       </button>{" "}
       to get the COMPONENT A value via ref: {value}
     </p>

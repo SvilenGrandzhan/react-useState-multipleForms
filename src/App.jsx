@@ -1,4 +1,3 @@
-import "./App.css";
 import { useState, useRef } from "react";
 import Form from "./components/Form";
 import Print from "./components/Print";
@@ -19,12 +18,14 @@ function App() {
   });
 
   return (
-    <div className="App">
-      {/* Passing managing state function as props to child */}
-      <Form setForm={setForm}/>
-      {/* Passing input date as props to other child */}
-      <Print form={form}/>
-      <div className="CompDiv">
+    <div className="flex">
+      <div className="flex flex-col mx-4">
+        {/* Passing managing state function as props to child */}
+        <Form setForm={setForm}/>
+        {/* Passing input date as props to other child */}
+        <Print form={form}/>
+      </div>
+      <div className="flex flex-col">
         <ComponentA elRef={elementRef}/>
         <ComponentB getRefFrom={elementRef}/>
       </div>
