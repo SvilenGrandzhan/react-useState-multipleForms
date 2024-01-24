@@ -1,18 +1,15 @@
-
-export default function Form({setForm}) {
+export default function Form({ setForm }) {
   const handleChange = (e) => {
     setForm((previousState) => {
-      return (
-        {
-          // taking previous state of form object
-          ...previousState,
-          // ! Important part of code snippet
-          // if key values in state object are same
-          // as name attributes in input forms
-          // can use following syntax for all
-          [e.target.name]: e.target.value,
-        }
-      )
+      return {
+        // taking previous state of form object
+        ...previousState,
+        // ! Important part of code snippet
+        // if key values in state object are same
+        // as name attributes in input forms
+        // can use following syntax for all
+        [e.target.name]: e.target.value,
+      };
     });
   };
   return (
