@@ -15,9 +15,9 @@ function App() {
 
   return (
     <div className="flex flex-row gap-8 mx-4">
-      {/* Passing managing state function as props to child */}
+      {/* Passing managing state function as props to child A*/}
       <Form setForm={setForm} />
-      {/* Passing input date as props to other child */}
+      {/* Passing input date as props to other child B*/}
       <Print form={form} />
     </div>
   );

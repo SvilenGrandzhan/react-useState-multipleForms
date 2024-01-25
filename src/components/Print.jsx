@@ -2,11 +2,11 @@ export default function Print({ form }) {
   return (
     <section className="flex flex-col gap-y-1">
       This is empty section html tag.
-      <p>{form.firstName}</p>
-      <p>{form.lastName}</p>
-      <p>{form.email}</p>
-      <p>{form.phone}</p>
-      <p>{form.address}</p>
+      <p>{`First name: ${form.firstName}`}</p>
+      <p>{`Last name: ${form.lastName}`}</p>
+      <p>{`Email: ${form.email}`}</p>
+      <p>{`Phone: ${form.phone}`}</p>
+      <p>{`Address: ${form.address}`}</p>
     </section>
   );
 }
